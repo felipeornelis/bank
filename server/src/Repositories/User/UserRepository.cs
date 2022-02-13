@@ -2,7 +2,20 @@ namespace Bank.Repositories;
 
 public class UserRepository : IUserRepository
 {
-    private readonly List<User> _repository = new();
+    private readonly List<User> _repository = new()
+    {
+        new User()
+        {
+            Name = "Felipe Ornelis",
+            Username = "ornelis",
+            Email = "ola@felipeornelis.com",
+            Password = "123456",
+            Id = Guid.Parse("533fd8a9-5cbe-4b12-8257-8a2b3fbe9f38"),
+            CreatedAt = DateTime.Parse("2022-02-13T17:00:43.9131014-03:00"),
+            UpdatedAt = null,
+            DeletedAt = null
+        }
+    };
 
     public User Create(CreateUserDTO payload)
     {

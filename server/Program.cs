@@ -11,7 +11,7 @@ builder.Services.AddSingleton<IUserRepository, UserRepository>();
 builder.Services.AddSingleton<ICategoryRepository, CategoryRepository>();
 builder.Services.AddSingleton<IAccountRepository, AccountRepository>();
 builder.Services.AddSingleton<IInstitutionRepository, InstitutionRepository>();
-// builder.Services.AddSingleton<ICreditCardRepository, CreditCardRepository>();
+builder.Services.AddSingleton<ICreditCardRepository, CreditCardRepository>();
 // builder.Services.AddSingleton<IStatementRepository, StatementRepository>();
 // builder.Services.AddSingleton<ITransactionRepository, TransactionRepository>();
 
@@ -28,6 +28,8 @@ builder.Services.AddScoped<CreateAccountService>();
 
 builder.Services.AddScoped<CreateInstitutionService>();
 builder.Services.AddScoped<ListAllInstitutionsService>();
+
+builder.Services.AddScoped<CreateCreditCardService>();
 
 // builder.Services.AddScoped<Service>();
 // builder.Services.AddScoped<FindUserByEmailService>();

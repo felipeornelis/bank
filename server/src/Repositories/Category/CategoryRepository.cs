@@ -2,7 +2,19 @@ namespace Bank.Repositories;
 
 public sealed class CategoryRepository : ICategoryRepository
 {
-    private List<Category> _repository = new();
+    private List<Category> _repository = new()
+    {
+        new Category()
+        {
+            Name = "Oi",
+            Icon = "https://genathus.com/deep.gif",
+            Type = TransactionType.Expense,
+            Id = Guid.Parse("3f041700-27b5-4817-814c-c69c89b8496b"),
+            CreatedAt = DateTime.Parse("2022-02-13T14:48:22.7227205-03:00"),
+            UpdatedAt = null,
+            DeletedAt = null
+        }
+    };
 
     public Category Create(CreateCategoryDTO payload)
     {
