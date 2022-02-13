@@ -1,6 +1,6 @@
-**/bin
-**/obj
-**/Properties
+**/bin/
+**/obj/
+**/Properties/
 **/appsettings.json
-**/node_modules
+**/node_modules/
 **/.env
