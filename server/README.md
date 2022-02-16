@@ -32,12 +32,12 @@ Entities
     - Payment due date
     - Limit
 
-# Statement
+# [Missing] Statement
     - Billing cycle
     - Statement sitatuion (open, late, paid)
     - Credit card Id
 
-# Transaction
+# [Missing] Transaction
     - Name
     - Description
     - Amount
@@ -46,11 +46,11 @@ Entities
     - Category
     - Account
     - Attachment
-    - Fixed Expense (boolean)
+    - Fixed Expense (boolean) // repeat every month
     - Repeat (int)
     - Operation Type (income or expense)
     
-    - Statement (guided by the payment due date)
+    - Statement (guided by the closing statement date)
     - Stallment (int)
     - Credit Card
 
